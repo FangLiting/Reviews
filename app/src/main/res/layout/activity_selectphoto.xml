@@ -9,11 +9,12 @@
         android:id="@+id/background2"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/背景图" />
+        app:srcCompat="@drawable/bg" />
 
     <TableRow
         android:layout_width="match_parent"
@@ -37,32 +38,26 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:gravity="bottom|right"
-                android:text="本桌桌号"
+                android:gravity="center|right"
+                android:text="本桌桌号 XXXX"
+                android:textAlignment="viewEnd"
                 android:textSize="34sp" />
 
-            <TextView
-                android:id="@+id/deskNum2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="bottom|right"
-                android:text="xxxx"
-                android:textSize="34sp" />
-
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="200dp"
+            <TableRow
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="right"
-                android:layout_weight="1"
-                android:background="#FFEB3B"
-                android:backgroundTint="#FFEB3B"
-                android:contentDescription="请选择桌号"
-                android:gravity="bottom|right"
-                android:isScrollContainer="true"
-                android:prompt="请选择桌号" />
+                android:layout_weight="1.5"
+                android:background="#FFEB3B">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  选择桌号  "
+                    android:textSize="30sp" />
+            </TableRow>
 
         </LinearLayout>
 
@@ -100,13 +95,13 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/非常满意" />
+                    app:srcCompat="@drawable/verysatisfy" />
 
                 <TextView
                     android:id="@+id/textView16"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="3"
                     android:gravity="center"
                     android:text="非常满意"
                     android:textSize="34sp" />
@@ -125,13 +120,13 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/满意" />
+                    app:srcCompat="@drawable/staisfy" />
 
                 <TextView
                     android:id="@+id/textView17"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="3"
                     android:gravity="center"
                     android:text="满意"
                     android:textSize="34sp" />
@@ -157,13 +152,13 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/不满意" />
+                    app:srcCompat="@drawable/nosatisfy" />
 
                 <TextView
                     android:id="@+id/textView18"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="3"
                     android:gravity="center"
                     android:text="不满意"
                     android:textSize="34sp" />
@@ -182,13 +177,13 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/非常不满" />
+                    app:srcCompat="@drawable/verynosatisfy" />
 
                 <TextView
                     android:id="@+id/textView19"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="3"
                     android:gravity="center"
                     android:text="非常不满"
                     android:textSize="34sp" />
